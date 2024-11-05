@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Cloner le dépôt Git
-                    git url: 'https://github.com/votre-utilisateur/MyCalculatorProject.git', branch: 'main'
+                    git url: 'https://github.com/meriem-achir/MyJavaApp.git', branch: 'main'
                 }
             }
         }
