@@ -14,21 +14,21 @@ pipeline {
         stage('Build') {
             steps {
                 // Construire le projet avec Maven
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
         
         stage('Test') {
             steps {
                 // Exécuter les tests unitaires
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
 
         stage('Run') {
             steps {
                 // Exécuter l'application
-                sh 'java -cp target/MyCalculatorProject-1.0-SNAPSHOT.jar com.example.Main'
+                bat 'java -cp target/MyCalculatorProject-1.0-SNAPSHOT.jar com.example.Main'
             }
         }
     }
