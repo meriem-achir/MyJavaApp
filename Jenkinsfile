@@ -28,7 +28,7 @@ pipeline {
         stage('Run') {
             steps {
                 // Exécuter l'application
-                bat 'java -cp target/MyCalculatorProject-1.0-SNAPSHOT.jar com.example.Main'
+                bat 'java -cp target/MyCalculatorProject-1.0-SNAPSHOT.jar Main'
             }
         }
     }
